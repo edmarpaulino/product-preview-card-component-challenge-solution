@@ -8,29 +8,45 @@
   
   <title>Frontend Mentor | Product preview card component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="./styles/reset.css">
+  <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
+  <div class="container">
+    <div class="product_card">
+      <div class="product_image">
+        <img src="./images/image-product-mobile.jpg" alt="Gabrielle Essence Eau De Parfum in a square bottle on a gray background with green leaves on the top left and bottom right">
+      </div>
 
-  Perfume
+      <div class="product_info">
+        <h3 class="product_section">Perfume</h3>
 
-  Gabrielle Essence Eau De Parfum
+        <h1 class="product_name">Gabrielle Essence Eau De Parfum</h1>     
 
-  A floral, solar and voluptuous interpretation composed by Olivier Polge, 
-  Perfumer-Creator for the House of CHANEL.
+        <p class="product_description">
+          A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+          Perfumer-Creator for the House of CHANEL.
+        </p>
 
-  $149.99
-  $169.99
+        <div class="product_price">
+          <span class="discount_price">$149.99</span>
 
-  Add to Cart
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+          <span class="full_price">$169.99</span>
+        </div>
+        
+        <button class="cart_button">
+          <img src="./images/icon-cart.svg" alt="cart icon">
+          Add to Cart
+        </button>
+      </div>
+    </div>
   </div>
+  
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </footer>
 </body>
 </html>

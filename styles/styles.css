@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+:root {
+  --primary-dark-cyan: hsl(158, 36%, 37%);
+  --primary-cream: hsl(30, 38%, 92%);
+
+  --neutral-dark-blue: hsl(212, 21%, 14%);
+  --neutral-grayish-blue: hsl(228, 12%, 48%);
+  --neutral-white: hsl(0, 0%, 100%);
+
+  --font-fraunces: 'Fraunces', serif;
+  --font-montserrat: 'Montserrat', sans-serif;
+}
+
+body {
+  font-size: 14px;
+  background-color: var(--primary-cream);
+  height: 100vh;
+  max-height: 100vh;
+  width: 100vw;
+  max-width: 100vw;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product_card {
+  font-family: var(--font-montserrat);
+  color: var(--neutral-grayish-blue);
+  background-color: var(--neutral-white);
+  border-radius: 10px;
+  width: 340px;
+  overflow: hidden;
+}
+
+.product_image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.product_image img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.product_info {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+
+.product_section {
+  font-weight: 500;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  letter-spacing: 0.4em;
+}
+
+.product_name {
+  font-family: var(--font-fraunces);
+  font-size: 2em;
+  color: var(--neutral-dark-blue);
+  font-weight: 700;
+}
+
+.product_description {
+  line-height: 1.5em;
+}
+
+.product_price {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.discount_price {
+  font-size: 2em;
+  font-family: var(--font-fraunces);
+  font-weight: 700;
+  color: var(--primary-dark-cyan)
+}
+
+.full_price {
+  text-decoration: line-through;
+}
+
+.cart_button {
+  border-radius: 10px;
+  height: 3em;
+  border: none;
+  background-color: var(--primary-dark-cyan);
+  color: var(--neutral-white);
+  font-weight: 700;
+  font-size: 1em;
+}
+
+.cart_button:hover {
+  transition: 0.5s;
+  background-color: var(--neutral-dark-blue);
+  cursor: pointer;
+}
+
+.cart_button img {
+  margin-right: 0.5em;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

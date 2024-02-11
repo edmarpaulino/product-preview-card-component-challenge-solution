@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [GitHub Pages](#)
+- Live Site URL: [GitHub Pages](https://edmarpaulino.github.io/product-preview-card-component-challenge-solution/)
 
 ## My process
 
